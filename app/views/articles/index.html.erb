@@ -6,38 +6,78 @@
         <h1 class="name"><a href="#">Sidecar</a></h1>
       </div>
     </header>
-    <div class="content">
-      <div class="date-header">
-        <a class="prev-link"></a>
-        <h3 class="date">
-          <span class="date"><%= Date.today.strftime('%B %-d') %></span> 
-          <!--  We need two classes for desktop and mobile {st,nd,rd,th} -->
-        </h3>
-        <a class="next_link"></a>
+    <section class="dates">
+      <div class="yesterday">
+          <h3 class="date-yesterday">
+            <span class="date"><%= (Date.today - 1).strftime('%B %-d') %></span> 
+            <!--  We need two classes for desktop and mobile {st,nd,rd,th} -->
+          </h3>
+        <img src="http://placehold.it/60x60">
       </div>
-      <div class="posts">
-        <div class="first">
-          <div class="share-link"></div>
-          <div class="share-option_hidden"></div>
-          <div class="post-content">
-            <div class="post-info">
-              <h3 class="post-heading">Tips: How to build a website that Google loves
-                <a href="#" class="post-title" target="_blank"></a>
-              </h3>
-              <p class="post_domain">www.softwaredevelopersindia.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="second"></div>
-        <div class="third"></div>
+
+      <div class="today">
+          <h3 class="date-today">
+            <span class="date"><%= Date.today.strftime('%B %-d') %></span> 
+            <!--  We need two classes for desktop and mobile {st,nd,rd,th} -->
+          </h3>
+      </div>
+
+      <div class="tomorrow">
+        <h4>
+        <h3 class="date-tomorrow">
+            <span class="date"><%= (Date.today + 1).strftime('%B %-d') %></span> 
+            <!--  We need two classes for desktop and mobile {st,nd,rd,th} -->
+          </h3>
+        </h4>
+        <img src="http://placehold.it/60x60">
+      </div>
+  </section>
+
+  <section class="articles">
+    <div class="article">
+      <div class="art-title">
+        <h4>Tips: How to build a website that Google loves</h4>
+      </div>
+      <div class="art-site">
+        <h5>www.softwaredevelopersindia.com</h5>
+      </div>
+      <div class="share-img">
+        <img src="http://placehold.it/60x60">
       </div>
     </div>
-    <div class="footer">
+    <div class="article">
+      <div class="art-img">
+        
+      </div>
+      <div class="art-title">
+        <h4>Title</h4>
+      </div>
+      <div class="art-site">
+        <h5>Site</h5>
+      </div>
+      <div class="share-img">
+        <img src="http://placehold.it/60x60">
+      </div>
+    </div>
+    <div class="article">
+      <div class="art-title">
+        <h4>Title</h4>
+      </div>
+      <div class="art-site">
+        <h5>Site</h5>
+      </div>
+      <div class="share-img">
+        <img src="http://placehold.it/60x60">
+      </div>
+    </div>
+  </section>
+
+    <footer>
       <div class="links">
-        <a href="#" class="tweet" target="_blank">Tweet</a>
+        <a href="https://twitter.com/intent/tweet?status=Want%20to%20see%20cool%20articles%20check%20out%20Sidecar%20@%20+http://google.com" class="tweet" target="_blank">Tweet</a>
         <a href="#" class="about" target="_blank">About</a>
-        <a href="#" class="github-icon" target="_blank">Github</a>
+        <a href="https://github.com/hhassan1230/articles" class="github-icon" target="_blank">Github</a>
       </div>
-    </div>
+    <footer>
   </div>
 </div>
