@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="container">
-    <header>
+    <header>    
       <div class="title">
-        <a href="#" class="logo"></a>
+        <!-- <a href="#" class="logo"><i class="fa fa-bolt"></i></a> -->
         <h1 class="name"><a href="#">Sidecar</a></h1>
       </div>
     </header>
@@ -10,7 +10,8 @@
       <div class="date-header">
         <a class="prev-link"></a>
         <h3 class="date">
-          <!-- <span class="date"></span>  We need two classes for desktop and mobile-->
+          <span class="date"><%= Date.today.strftime('%B %-d') %></span> 
+          <!--  We need two classes for desktop and mobile {st,nd,rd,th} -->
         </h3>
         <a class="next_link"></a>
       </div>
@@ -20,10 +21,10 @@
           <div class="share-option_hidden"></div>
           <div class="post-content">
             <div class="post-info">
-              <h3 class="post-heading">
+              <h3 class="post-heading">Tips: How to build a website that Google loves
                 <a href="#" class="post-title" target="_blank"></a>
               </h3>
-              <p class="post_domain"></p>
+              <p class="post_domain">www.softwaredevelopersindia.com</p>
             </div>
           </div>
         </div>
